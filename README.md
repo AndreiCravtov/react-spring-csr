@@ -10,5 +10,5 @@ This is a full-stack web app template, using React for the front end and Spring 
 
 ## Options
 1. You can edit the `pom.xml` file to add more dependencies to Spring, like support for GraphQL
-2. You can edit the `WebMvcConfiguration` class to modify the URI redirection rules
+2. You can edit the `WebMvcConfiguration` class to modify the URI forwarding rules
 3. You can edit the `error()` method in `MainController` class to modify the error redirection rules
