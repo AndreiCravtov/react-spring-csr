@@ -1,0 +1,16 @@
+server:
+    port: 8080
+
+spring:
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+    jpa:
+        hibernate:
+            naming:
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        datasource:
+            url: jdbc:mysql://localhost:3306/dbname
+            username: root
+            password: password
