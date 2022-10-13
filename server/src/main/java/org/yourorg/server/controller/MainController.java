@@ -24,7 +24,7 @@ public class MainController implements ErrorController {
         if (originUri == null) throw new NullPointerException("Origin URI is null");
 
         // Append appropriate status code message
-        returnVal.append(switch(Integer.parseInt(statusCode.toString())) {
+        returnVal.append(switch (Integer.parseInt(statusCode.toString())) {
             case 400 -> { yield "bad-request"; }
             case 401 -> { yield "unauthorised"; }
             case 402 -> { yield "payment-required"; }
